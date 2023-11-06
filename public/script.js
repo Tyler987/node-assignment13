@@ -34,7 +34,7 @@ const showExercises = async () => {
       section.append(totalweeklysets);
   
       const img = document.createElement("img");
-      img.src = `http://localhost:3000/${exercise.img}`;
+      img.src = `https://node-assignment13.onrender.com/${exercise.img}`;
       img.width = 300;
       img.height = 200;
       section.append(img);
@@ -43,7 +43,7 @@ const showExercises = async () => {
   
   const getExercises = async () => {
     try {
-      return (await fetch("http://localhost:3000/api/exercises")).json();
+      return (await fetch("https://node-assignment13.onrender.com/api/exercises")).json();
     } catch (error) {
       console.log("Error retrieving exercise data from the API");
       return [];
